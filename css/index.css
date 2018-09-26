@@ -1,0 +1,276 @@
+/* 在主页的样式去引入公共的样式文件 */
+/* 公共变量 */
+/* 样式重置 */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+html {
+  font-size: 100px;
+}
+body {
+  font-size: 0.14rem;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+input {
+  border: 0;
+}
+img {
+  vertical-align: middle;
+}
+i {
+  font-size: normal;
+}
+/* 公共样式 */
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.top-border {
+  border-top: 1px solid #ccc;
+}
+.bottom-border {
+  border-bottom: 1px solid #ccc;
+}
+.left-border {
+  border-left: 1px solid #ccc;
+}
+.right-border {
+  border-right: 1px solid #ccc;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 页脚公共样式*/
+#footer {
+  position: fixed;
+  width: 100%;
+  height: 0.5rem;
+  bottom: 0px;
+  background-color: #fff;
+  max-width: 7.5rem;
+  z-index: 999;
+}
+#footer ul {
+  display: flex;
+}
+#footer ul li {
+  flex: 1;
+}
+#footer ul li a {
+  display: block;
+  text-align: center;
+}
+#footer ul li a img {
+  width: 0.65rem;
+  height: 0.5rem;
+}
+/* 公共的图标样式 */
+[class^="icon-"],
+[class*=" icon-"] {
+  background-image: url('../images/sprites.png');
+  background-size: 2rem 2rem;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+input::-webkit-input-placeholder {
+  font-size: 0.12rem;
+}
+body {
+  max-width: 7.5rem;
+  margin: 0px auto;
+}
+/*头部区域样式*/
+body {
+  max-width: 7.5rem;
+  margin: 0px auto;
+}
+/*头部区域样式*/
+#header {
+  position: fixed;
+  width: 100%;
+  max-width: 7.5rem;
+  display: flex;
+  padding: 0.1rem;
+  background-color: rgba(222, 24, 27, 0);
+  z-index: 999;
+}
+#header .logo {
+  width: 0.58rem;
+  height: 0.24rem;
+  background-position: 0 -1.08rem;
+  margin-top: 0.03rem;
+}
+#header .search {
+  flex: 1;
+  margin: 0px 0.1rem;
+  position: relative;
+}
+#header .search > i {
+  position: absolute;
+  width: 0.2rem;
+  height: 0.2rem;
+  background-position: -0.6rem -1.1rem;
+  top: 0.06rem;
+  left: 0.04rem;
+}
+#header .search input {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  height: 0.3rem;
+  width: 100%;
+  padding-left: 0.25rem;
+}
+#header .login {
+  width: 0.58rem;
+  text-align: center;
+  line-height: 0.3rem;
+  color: #fff;
+}
+#slide .swiper-container .swiper-wrapper img {
+  width: 100%;
+}
+#slide .swiper-container .swiper-pagination span {
+  width: 0.08rem;
+  height: 0.08rem;
+  margin: 0 0.04rem;
+  background-color: transparent;
+  opacity: 1;
+  border: 1px solid #fff;
+}
+#slide .swiper-container .swiper-pagination span.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+#nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.1rem;
+}
+#nav ul li {
+  width: 25%;
+  text-align: center;
+}
+#nav ul li a img {
+  width: 0.4rem;
+  height: 0.4rem;
+}
+#nav ul li a p {
+  font-size: 0.14rem;
+  line-height: 0.3rem;
+}
+#main {
+  padding: 0.1rem;
+  background-color: #f5f5f5;
+  margin-bottom: 0.5rem;
+}
+#main #seckill {
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+#main #seckill .title {
+  padding: 0.05rem;
+}
+#main #seckill .title img {
+  width: 0.2rem;
+  height: 0.25rem;
+}
+#main #seckill .title p {
+  margin: 0px 0.1rem;
+  color: #e93b3d;
+  font-size: 0.14rem;
+  line-height: 0.25rem;
+}
+#main #seckill .title .down-time {
+  display: flex;
+}
+#main #seckill .title .down-time span {
+  display: block;
+  width: 0.18rem;
+  line-height: 0.25rem;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  margin: 0 0.02rem;
+}
+#main #seckill .title .down-time span:nth-child(3n) {
+  width: 0.05rem;
+  background-color: #fff;
+  color: #000;
+}
+#main #seckill .title .more {
+  font-size: 0.14rem;
+}
+#main #seckill .content {
+  padding: 0.1rem 0;
+}
+#main #seckill .content ul {
+  display: flex;
+}
+#main #seckill .content ul li {
+  width: 33%;
+}
+#main #seckill .content ul li a {
+  display: block;
+  text-align: center;
+}
+#main #seckill .content ul li a img {
+  width: 100%;
+}
+#main #seckill .content ul li a p {
+  font-size: 0.12rem;
+  line-height: 0.2rem;
+}
+#main #seckill .content ul li a p:nth-of-type(1) {
+  color: #e93b3d;
+}
+#main #seckill .content ul li a p:nth-of-type(2) {
+  text-decoration: line-through;
+}
+#main #market {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin-top: 0.1rem;
+}
+#main #market .title {
+  font-weight: normal;
+  padding-left: 0.2rem;
+  line-height: 0.35rem;
+  position: relative;
+}
+#main #market .title::before {
+  content: "";
+  position: absolute;
+  width: 0.04rem;
+  height: 0.15rem;
+  background-color: #e93b3d;
+  top: 0.1rem;
+  left: 0.1rem;
+}
+#main #market .content {
+  display: flex;
+}
+#main #market .content .left,
+#main #market .content .right {
+  flex: 1;
+}
+#main #market .content .left a,
+#main #market .content .right a {
+  display: block;
+}
+#main #market .content .left a img,
+#main #market .content .right a img {
+  width: 100%;
+}

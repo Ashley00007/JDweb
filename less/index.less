@@ -1,0 +1,414 @@
+/* 在主页的样式去引入公共的样式文件 */
+@import 'base.less';
+body {
+    max-width: 7.5rem;
+    margin: 0px auto;
+}
+
+/*头部区域样式*/
+body {
+    max-width: 7.5rem;
+    margin: 0px auto;
+}
+
+/*头部区域样式*/
+#header {
+    position: fixed;
+    width: 100%;
+    max-width: 7.5rem;
+    display: flex;
+    padding: 0.1rem;
+    background-color: rgba(222, 24, 27, 0);
+    z-index: 999;
+    .logo {
+        width: 0.58rem;
+        height: 0.24rem;
+        background-position: 0 -1.08rem;
+        margin-top: 0.03rem;
+    }
+    .search {
+        flex: 1;
+        margin: 0px 0.1rem;
+        position: relative;
+        >i {
+            position: absolute;
+            width: 0.2rem;
+            height: 0.2rem;
+            background-position: -0.6rem -1.1rem; 
+            top: 0.06rem;
+            left: 0.04rem;
+
+        }
+        input {
+            border: 1px solid @border-color;
+            border-radius: 15px;
+            height: 0.3rem;
+            width: 100%;
+            padding-left: 0.25rem;
+        }
+     
+    }
+    .login {
+        width: 0.58rem;
+        text-align: center;
+        line-height: 0.3rem;
+        color: #fff;
+    }
+}
+
+#slide {
+    .swiper-container {
+        .swiper-wrapper {
+            img {
+                width: 100%;
+            }
+        }
+        .swiper-pagination {
+            span {
+                width: 0.08rem;
+                height: 0.08rem;
+                margin: 0 0.04rem;
+                background-color: transparent;
+                opacity: 1;
+                border: 1px solid #fff;
+                &.swiper-pagination-bullet-active {
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+   
+}
+
+#nav {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0.1rem;
+        li {
+            width: 25%;
+            text-align: center;
+            a {
+                img {
+                    width: 0.4rem;
+                    height: 0.4rem;
+                }
+                p {
+                    font-size: 0.14rem;
+                    line-height: 0.3rem;
+                }
+            }
+        }
+
+    }
+   
+  
+}
+
+#main {
+    padding: 0.1rem;
+    background-color: #f5f5f5;
+    margin-bottom: 0.5rem;
+    #seckill{
+        border: 1px solid @border-color;
+        background-color: #fff;
+        .title {
+            padding: 0.05rem;
+            img {
+                width: 0.2rem;
+                height: 0.25rem;
+            }
+            p {
+                margin: 0px 0.1rem;
+                color: @main-color;
+                font-size: 0.14rem;
+                line-height: 0.25rem;
+            }
+            .down-time {
+                display: flex;
+                span {
+                    display: block;
+                    width: 0.18rem;
+                    line-height: 0.25rem;
+                    background-color: #000;
+                    color: #fff;
+                    text-align: center;
+                    margin: 0 0.02rem;
+                    &:nth-child(3n) {
+                        width: 0.05rem;
+                        background-color: #fff;
+                        color: #000;
+                    }
+                }
+            }
+
+            .more {
+                font-size: 0.14rem;
+            }
+
+        }
+
+        .content {
+            padding: 0.1rem 0;
+            ul {
+                display: flex;
+                li {
+                    width: 33%;
+                    a {
+                        display: block;
+                        text-align: center;
+                        img {
+                            width: 100%;
+                        }
+                        p {
+                            font-size: 0.12rem;
+                            line-height: 0.2rem;
+                            &:nth-of-type(1){
+                              color: @main-color;  
+                            }
+                            &:nth-of-type(2){
+                                text-decoration: line-through;
+                            }
+                        }
+                    }
+                }
+            }  
+        }
+        
+    }
+
+    #market {
+        border: 1px solid @border-color;
+        background-color: #fff;
+        margin-top: 0.1rem;
+        .title {
+            font-weight: normal;
+            padding-left: 0.2rem;
+            line-height: 0.35rem;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 0.04rem;
+                height: 0.15rem;
+                background-color: @main-color;
+                top: 0.1rem;
+                left: 0.1rem;
+            }
+        }
+        .content {
+            display: flex;
+            .left,.right {
+                flex: 1;
+                a {
+                    display: block;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// body {
+//     max-width: 750px;
+//     margin: 0px auto;
+// }
+
+// /*头部区域样式*/
+// #header {
+//     position: fixed;
+//     width: 100%;
+//     max-width: 750px;
+//     display: flex;
+//     padding: 10px;
+//     background-color: rgba(222, 24, 27, 0);
+//     z-index: 999;
+//     .logo {
+//         width: 58px;
+//         height: 24px;
+//         background-position: 0 -108px;
+//         margin-top: 3px;
+//     }
+//     .search {
+//         flex: 1;
+//         margin: 0px 10px;
+//         position: relative;
+//         >i {
+//             position: absolute;
+//             width: 20px;
+//             height: 20px;
+//             background-position: -60px -110px; 
+//             top: 6px;
+//             left: 4px;
+
+//         }
+//         input {
+//             border: 1px solid @border-color;
+//             border-radius: 15px;
+//             height: 30px;
+//             width: 100%;
+//             padding-left: 25px;
+//         }
+     
+//     }
+//     .login {
+//         width: 58px;
+//         text-align: center;
+//         line-height: 30px;
+//         color: #fff;
+//     }
+// }
+// #slide {
+//     .swiper-container {
+//         .swiper-wrapper {
+//             img {
+//                 width: 100%;
+//             }
+//         }
+//         .swiper-pagination {
+//             span {
+//                 background-color: transparent;
+//                 opacity: 1;
+//                 border: 1px solid #fff;
+//                 &.swiper-pagination-bullet-active {
+//                     background-color: #fff;
+//                 }
+//             }
+//         }
+//     }
+   
+// }
+// #nav {
+//     ul {
+//         display: flex;
+//         flex-wrap: wrap;
+//         padding: 10px;
+//         li {
+//             width: 25%;
+//             text-align: center;
+//             a {
+//                 img {
+//                     width: 40px;
+//                     height: 40px;
+//                 }
+//                 p {
+//                     font-size: 14px;
+//                     line-height: 30px;
+//                 }
+//             }
+//         }
+
+//     }
+   
+  
+// }
+
+// #main {
+//     padding: 10px;
+//     background-color: #f5f5f5;
+//     margin-bottom: 50px;
+//     #seckill{
+//         border: 1px solid @border-color;
+//         background-color: #fff;
+//         .title {
+//             padding: 5px;
+//             img {
+//                 width: 20px;
+//                 height: 25px;
+//             }
+//             p {
+//                 margin: 0px 10px;
+//                 color: @main-color;
+//                 font-size: 14px;
+//                 line-height: 25px;
+//             }
+//             .down-time {
+//                 display: flex;
+//                 span {
+//                     display: block;
+//                     width: 18px;
+//                     line-height: 25px;
+//                     background-color: #000;
+//                     color: #fff;
+//                     text-align: center;
+//                     margin: 0 2px;
+//                     &:nth-child(3n) {
+//                         width: 5px;
+//                         background-color: #fff;
+//                         color: #000;
+//                     }
+//                 }
+//             }
+
+//             .more {
+//                 font-size: 14px;
+//             }
+
+//         }
+
+//         .content {
+//             padding: 10px 0;
+//             ul {
+//                 display: flex;
+//                 li {
+//                     width: 33%;
+//                     a {
+//                         display: block;
+//                         text-align: center;
+//                         img {
+//                             width: 100%;
+//                         }
+//                         p {
+//                             font-size: 12px;
+//                             line-height: 20px;
+//                             &:nth-of-type(1){
+//                               color: @main-color;  
+//                             }
+//                             &:nth-of-type(2){
+//                                 text-decoration: line-through;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }  
+//         }
+        
+//     }
+
+//     #market {
+//         border: 1px solid @border-color;
+//         background-color: #fff;
+//         margin-top: 10px;
+//         .title {
+//             font-weight: normal;
+//             padding-left: 20px;
+//             line-height: 35px;
+//             position: relative;
+//             &::before {
+//                 content: "";
+//                 position: absolute;
+//                 width: 4px;
+//                 height: 15px;
+//                 background-color: @main-color;
+//                 top: 10px;
+//                 left: 10px;
+//             }
+//         }
+//         .content {
+//             display: flex;
+//             .left,.right {
+//                 flex: 1;
+//                 a {
+//                     display: block;
+//                     img {
+//                         width: 100%;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+

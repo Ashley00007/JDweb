@@ -1,0 +1,210 @@
+/* 在主页的样式去引入公共的样式文件 */
+/* 公共变量 */
+/* 样式重置 */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+html {
+  font-size: 100px;
+}
+body {
+  font-size: 0.14rem;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+input {
+  border: 0;
+}
+img {
+  vertical-align: middle;
+}
+i {
+  font-size: normal;
+}
+/* 公共样式 */
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.top-border {
+  border-top: 1px solid #ccc;
+}
+.bottom-border {
+  border-bottom: 1px solid #ccc;
+}
+.left-border {
+  border-left: 1px solid #ccc;
+}
+.right-border {
+  border-right: 1px solid #ccc;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 页脚公共样式*/
+#footer {
+  position: fixed;
+  width: 100%;
+  height: 0.5rem;
+  bottom: 0px;
+  background-color: #fff;
+  max-width: 7.5rem;
+  z-index: 999;
+}
+#footer ul {
+  display: flex;
+}
+#footer ul li {
+  flex: 1;
+}
+#footer ul li a {
+  display: block;
+  text-align: center;
+}
+#footer ul li a img {
+  width: 0.65rem;
+  height: 0.5rem;
+}
+/* 公共的图标样式 */
+[class^="icon-"],
+[class*=" icon-"] {
+  background-image: url('../images/sprites.png');
+  background-size: 2rem 2rem;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+input::-webkit-input-placeholder {
+  font-size: 0.12rem;
+}
+html {
+  height: 100%;
+}
+body {
+  max-width: 7.5rem;
+  margin: 0px auto;
+  height: 100%;
+  padding: 0.4rem 0px 0.5rem;
+}
+#header {
+  display: flex;
+  background-color: #f5f5f5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 7.5rem;
+}
+#header > a {
+  padding: 0.1rem;
+  width: 0.2rem;
+  height: 0.2rem;
+  box-sizing: content-box;
+}
+#header .icon-back {
+  background-position: -0.2rem 0;
+}
+#header .search {
+  flex: 1;
+  padding: 0.05rem;
+  position: relative;
+}
+#header .search .icon-search {
+  position: absolute;
+  width: 0.2rem;
+  height: 0.2rem;
+  background-position: -0.6rem -1.1rem;
+  top: 0.1rem;
+  left: 0.1rem;
+}
+#header .search input {
+  height: 0.3rem;
+  width: 100%;
+  border-radius: 15px;
+  padding-left: 0.3rem;
+}
+#header .icon-category {
+  background-position: -0.6rem 0;
+}
+#main {
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+#main .left {
+  width: 0.85rem;
+  background-color: #f5f5f5;
+  height: 100%;
+}
+#main .left .swiper-container {
+  height: 100%;
+}
+#main .left .swiper-container .swiper-wrapper {
+  height: 100%;
+}
+#main .left .swiper-container .swiper-wrapper .swiper-slide {
+  height: auto;
+}
+#main .left .swiper-container .swiper-wrapper .swiper-slide ul li.active {
+  background-color: #fff;
+}
+#main .left .swiper-container .swiper-wrapper .swiper-slide ul li.active a {
+  color: #e93b3d;
+}
+#main .left .swiper-container .swiper-wrapper .swiper-slide ul li a {
+  display: block;
+  width: 100%;
+  line-height: 0.42rem;
+  text-align: center;
+  font-size: 0.12rem;
+}
+#main .right {
+  flex: 1;
+  height: 100%;
+}
+#main .right .swiper-container {
+  height: 100%;
+}
+#main .right .swiper-container .swiper-wrapper {
+  height: 100%;
+}
+#main .right .swiper-container .swiper-wrapper .swiper-slide {
+  height: auto;
+}
+#main .right .swiper-container .swiper-wrapper .swiper-slide .branchList {
+  margin-top: 0.1rem;
+}
+#main .right .swiper-container .swiper-wrapper .swiper-slide .branchList .jd-brand .title {
+  padding-left: 0.2rem;
+  font-size: 0.14rem;
+}
+#main .right .swiper-container .swiper-wrapper .swiper-slide .branchList .jd-brand .content ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#main .right .swiper-container .swiper-wrapper .swiper-slide .branchList .jd-brand .content ul li {
+  width: 33%;
+  margin: 0.1rem 0;
+}
+#main .right .swiper-container .swiper-wrapper .swiper-slide .branchList .jd-brand .content ul li a {
+  display: block;
+  text-align: center;
+}
+#main .right .swiper-container .swiper-wrapper .swiper-slide .branchList .jd-brand .content ul li a img {
+  width: 0.7rem;
+}
+#main .right .swiper-container .swiper-wrapper .swiper-slide .branchList .jd-brand .content ul li a span {
+  display: block;
+  font-size: 0.12rem;
+}
